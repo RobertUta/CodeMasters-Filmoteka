@@ -2,20 +2,20 @@
   "name": "js-teamproject",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/RobertUta/Wildcats-Filmoteka",
+  "homepage": "https://github.com/RobertUta/CodeMasters-Filmoteka",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Wildcats-Filmoteka/"
+    "build": "parcel build src/*.html --public-url /CodeMasters-Filmoteka/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RobertUta/Wildcats-Filmoteka"
+    "url": "git+https://github.com/RobertUta/CodeMasters-Filmoteka"
   },
   "keywords": [],
   "author": "Wildcats",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RobertUta/Wildcats-Filmoteka"
+    "url": "https://github.com/RobertUta/CodeMasters-Filmoteka"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
