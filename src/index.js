@@ -1,1 +1,1 @@
-import GALLERY from './partials/gallery';
+import GALLERY from './js/gallery';
