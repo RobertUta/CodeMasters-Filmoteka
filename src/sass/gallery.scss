@@ -75,15 +75,16 @@
   @media screen and (min-width: 768px) {
     .movie-card {
       display: inline-block;
-      margin: 20px; 
+      margin: 10px; 
+      max-width: 395px;
     }
   
     .movie-card:nth-child(odd) {
-      margin-right: 20px; 
+      margin-right: 10px; 
     }
   
     .movie-card:nth-child(even) {
-      margin-left: 20px; 
+      margin-left: 10px; 
     }
   
     
@@ -91,7 +92,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 20px 60px;
+      min-width: 900px;
     }
   
     .fixedbutton {
@@ -101,11 +102,11 @@
   
   @media screen and (min-width: 1280px) {
     .movie-container {
-      margin: 20px auto;
-      width: 1216px;
+      margin: 10px auto;
+      
     }
     .movie-card {
-      width: calc(33.33% - 14px);
+      max-width: 395px;
     }
   }
   
