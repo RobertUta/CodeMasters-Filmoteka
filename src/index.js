@@ -1,0 +1,1 @@
+import GALLERY from './partials/gallery';
