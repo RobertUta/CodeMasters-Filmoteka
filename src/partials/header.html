@@ -6,7 +6,7 @@
   crossorigin="anonymous"
 /> -->
 
-<section class="header">
+<section class="header background">
   <picture class="header-background">
     <!-- Desktop -->
     <source media="(min-width:1268px)" srcset="./images/desktop_header.jpg" />
@@ -37,10 +37,10 @@
         </button>
       </div>
 
-      <label class="switch">
-        <input type="checkbox" />
-        <span class="slider round"></span>
-      </label>
+      <div class="switch-container">
+        <input type="checkbox" id="darkmode-toggle" onclick="myFunction()"/>
+        <label for="darkmode-toggle">
+      </div>
     </nav>
   </div>
 
@@ -51,3 +51,5 @@
     <h1>Filmoteka</h1>
   </div>
 </section>
+
+<script type="module" src="./partials/change-background.js"></script>

@@ -7,9 +7,14 @@ ul {
   list-style: none;
 }
 
+img {
+  border-radius: 20px;
+}
+
 .header-background {
   position: absolute;
   z-index: -1;
+  border-radius: 10px;
 }
 
 .header {
@@ -18,7 +23,7 @@ ul {
   gap: 312px;
   width: 280px;
   height: 460px;
-  border-radius: 10px;
+  border-radius: 100px;
   position: relative;
   margin: 20px;
 }
@@ -158,69 +163,74 @@ ul {
   line-height: normal;
 }
 
-// Switch button //
-/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 17px;
-  order: 2;
+// ---- Switch button ---- //
+
+.switch-container {
+  display: flex;
+  order: 4;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 42px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}
+
+label:after {
+  content: '';
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 42px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
   width: 0;
   height: 0;
+  visibility: hidden;
 }
 
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+input:checked + label {
+  background: #242424;
 }
 
-.slider:before {
-  position: absolute;
-  content: '';
-  height: 15px;
-  width: 15px;
-  left: 1px;
-  bottom: 1px;
-  background-color: rgba(255, 153, 0, 0.808);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+input:checked + label:after {
+  left: 100px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
 }
 
-input:checked + .slider {
-  background-color: #000;
+label,
+label:after {
+  transition: 0.3s;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px #fff;
+label:active:after {
+  width: 60px;
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(13px);
-  -ms-transform: translateX(13px);
-  transform: translateX(13px);
+input:checked + label + .header {
+  background: #242424;
 }
 
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 // Switch button //
 
