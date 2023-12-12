@@ -37,7 +37,7 @@ img {
   flex-wrap: wrap;
   padding: 14px 0 0 14px;
   row-gap: 8px;
-  column-gap: 4px;
+  column-gap: 0px;
 }
 
 .location {
@@ -87,7 +87,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 113px;
+  width: 100px;
   height: 34px;
   background-color: #fff;
 }
@@ -96,7 +96,7 @@ img {
   position: relative;
   display: flex;
   width: 252px;
-  order: 3;
+  order: 4;
   gap: -2px;
 }
 
@@ -150,6 +150,7 @@ img {
   gap: 8px;
   align-items: center;
   justify-content: center;
+  order: 3;
 }
 
 .logo-section h1 {
@@ -166,8 +167,9 @@ img {
 // ---- Switch button ---- //
 
 .switch-container {
+  position: relative;
   display: flex;
-  order: 4;
+  order: 3;
   justify-content: center;
   align-items: center;
 }
@@ -176,8 +178,8 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 42px;
+  width: 50px;
+  height: 21px;
   position: relative;
   display: block;
   background: #ebebeb;
@@ -189,8 +191,8 @@ label {
 
 label:after {
   content: '';
-  width: 42px;
-  height: 42px;
+  width: 21px;
+  height: 21px;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -210,7 +212,7 @@ input:checked + label {
 }
 
 input:checked + label:after {
-  left: 100px;
+  left: 50px;
   transform: translateX(-100%);
   background: linear-gradient(180deg, #777, #3a3a3a);
 }
@@ -221,10 +223,20 @@ label:after {
 }
 
 label:active:after {
-  width: 60px;
+  width: 30px;
 }
 
-input:checked + label + .header {
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+  z-index: -100;
+  position: absolute;
+  top: 0px;
+  transition: 0.3s;
+}
+
+input:checked + label + body {
   background: #242424;
 }
 
@@ -232,6 +244,36 @@ input:checked + label + .header {
   background-color: black;
   color: white;
 }
+
+label svg {
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 0px;
+  z-index: 100;
+}
+label svg.sun {
+  left: 0px;
+  fill: #fff;
+  transition: 0.3s;
+}
+label svg.moon {
+  left: 30px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+input:checked + label svg.sun {
+  fill: #7e7e7e;
+}
+input:checked + label svg.moon {
+  fill: #fff;
+}
+
+.dark-mode {
+  background-color: #232323;
+  color: white;
+}
+
 // Switch button //
 
 // ================Tablet================= //
