@@ -1,12 +1,17 @@
 <link rel="stylesheet" href="./sass/modal.scss" />
-<button id="openModalBtn">Deschide Modal</button>
-<div id="myModal" class="modal">
-  <!-- Modal content -->
+<button data-modal-target="modal">Show Modal 1</button>
+<!-- modal triggering buttons selection by "data-modal-target" attribute. Alternatively, we could define a class e.g. "modal-trigger" -->
+
+<div class="modal" id="modal">
+  <!-- This is the background overlay -->
   <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <p>Filme populare:</p>
-    <ul id="trendingMoviesList"></ul>
-    <ul id="movieGenresList"></ul>
+    <!-- This is the actual modal/popup box -->
+    <span class="modal-close">&times;</span>
   </div>
 </div>
-<script type="module" src="./modal.js"></script>
+<div class="movie-container">
+  <!-- Aici vor fi afișate cardurile filmelor -->
+</div>
+
+<script type="module" src="./js/modal.js"></script>
+<script type="module" src="./index.js"></script>
