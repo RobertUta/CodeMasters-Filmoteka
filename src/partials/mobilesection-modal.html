@@ -1,17 +1,18 @@
 <link rel="stylesheet" href="./sass/modal.scss" />
-<button data-modal-target="modal">Show Modal 1</button>
-<!-- modal triggering buttons selection by "data-modal-target" attribute. Alternatively, we could define a class e.g. "modal-trigger" -->
+<div class="movie-container">
+  <div class="movie-container">
+    <div class="movie-card" data-modal-target="modal-1">
+      <img src="https://via.placeholder.com/150" alt="Movie 1" />
+      <h3>Movie 1</h3>
+    </div>
 
-<div class="modal" id="modal">
-  <!-- This is the background overlay -->
-  <div class="modal-content">
-    <!-- This is the actual modal/popup box -->
-    <span class="modal-close">&times;</span>
+    <div class="modal" id="modal-1">
+      <div class="modal-content">
+        <span class="modal-close" data-modal-close="modal-1">&times;</span>
+      </div>
+    </div>
+
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./index.js"></script>
   </div>
 </div>
-<div class="movie-container">
-  <!-- Aici vor fi afișate cardurile filmelor -->
-</div>
-
-<script type="module" src="./js/modal.js"></script>
-<script type="module" src="./index.js"></script>

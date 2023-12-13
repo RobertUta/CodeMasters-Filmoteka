@@ -2,8 +2,7 @@ import axios from 'axios';
 import apiMovie from './api-movie.js';
 import { getMovieGenres } from './api-genres.js';
 
-const ITEMS_PER_PAGE = 20; 
-
+const ITEMS_PER_PAGE = 20;
 
 async function displayMovieCards(movies) {
   const movieContainer = document.querySelector('.movie-container');
@@ -20,7 +19,7 @@ async function displayMovieCards(movies) {
       movieImage.src = imageUrl;
       movieImage.alt = movie.title;
       movieImage.classList.add('movie-image');
-      movieImage.tabIndex = 0; 
+      movieImage.tabIndex = 0;
 
       const movieTitle = document.createElement('h3');
       movieTitle.textContent = movie.title;
@@ -49,7 +48,6 @@ async function displayMovieCards(movies) {
   }
 }
 
-
 async function getMoviesFromApi() {
   try {
     const response = await axios.request(apiMovie);
@@ -65,7 +63,6 @@ async function getMoviesFromApi() {
   }
 }
 
-
 async function displayMovieCardsFromApi() {
   try {
     const movies = await getMoviesFromApi();
@@ -74,6 +71,5 @@ async function displayMovieCardsFromApi() {
     console.error('There was a problem displaying movie cards:', error);
   }
 }
-
 
 displayMovieCardsFromApi();
