@@ -10,12 +10,8 @@ const apiMovie = {
 
 export default apiMovie;
 
-
-
 // import axios from 'axios';
 // import apiAll from './api-movie.js';
-
-
 
 // axios
 //   .request(apiMovie)
