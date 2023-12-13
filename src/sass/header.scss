@@ -288,10 +288,12 @@ input:checked + label svg.moon {
 
   .main-navigation {
     padding: 16px 0 0 16px;
+    gap: 8px;
   }
 
   .location {
     order: 2;
+    gap: 8px;
   }
 
   .search-section {
