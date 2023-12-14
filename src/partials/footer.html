@@ -1,14 +1,30 @@
 <footer class="footer">
-    <div class="footer__container">
-      <p class="footer__text">© 2023 | All Rights Reserved |</p>
-      <div class="footer__sub">
-        Developed with
-        <svg class="footer__icon" width="14" height="14">
-          <use href="./images/icons.svg#icon-heart-favorite"></use>
-        </svg>
-        <button type="button" class="footer__btn" id="open-modal-btn">
-          by GoIT Students
+  <div class="container footer__container">
+    <p class="footer__info">
+      © 2022 | <span class="lang__rights_text">All Rights Reserved</span> |
+    </p>
+    <p class="footer__info">
+      <span class="footer__text"> Developed with</span>
+      <svg width="14" height="13" class="footer__icon">
+        <use href="./images/sprite.svg#icon-heart"></use>
+      </svg>
+      <span class="footer__by_text">by</span>
+
+      <button type="button" class="footer__btn" data-open-modal__window>
+        GoIT Students
+      </button>
+    </p>
+    <div class="overlay is-open-modal" data-modal__window>
+      <div class="modal footer__wrapper">
+        <button class="footer-modal__btn" data-close-modal__window>
+          <svg width="20" height="20" class="swiper__icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
         </button>
+        <div>
+          test
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
