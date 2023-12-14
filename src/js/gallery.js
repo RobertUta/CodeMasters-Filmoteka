@@ -177,5 +177,44 @@ prevButton.addEventListener('click', () => {
   }
 });
 
+export default class ModalClassic {
+  constructor(modal, btnClose) {
+    this.modal = document.querySelector(modal);
+    this.btnClose = document.querySelector(btnClose);
+  }
+  closingTracking() {
+    const modalV = this.modal;
+    const btnClose = this.btnClose;
+    btnClose.addEventListener('click', clickInBtnClose);
+    window.addEventListener('keydown', keydownInModal);
+    modalV.addEventListener('click', clickInModal);
+    function keydownInModal(e) {
+      // console.log(e.code);
+      if (e.code === 'Escape') {
+        closeModal();
+      }
+    }
+    function clickInModal(e) {
+      // console.log(e);
+      if (e.target === e.currentTarget) {
+        closeModal();
+      }
+    }
+    function clickInBtnClose(e) {
+      closeModal();
+    }
+    function closeModal() {
+      modalV.classList.add('is-hidden');
+      document.body.classList.remove('body--hidden');
+      window.removeEventListener('keydown', keydownInModal);
+    }
+  }
+  openModal() {
+    this.modal.classList.remove('is-hidden');
+    document.body.classList.toggle('body--hidden');
+    this.closingTracking();
+  }
+}
+
 // Example usage:
 displayPageData();

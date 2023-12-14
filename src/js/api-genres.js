@@ -7,7 +7,7 @@ const getMovieGenres = async () => {
           headers: {
             accept: "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3MmZiNGNlMzE4ZWEyMzFmODJjN2Y3MTc5NmFhM2M2ZSIsInN1YiI6IjY1NzBkZjkyZGQ3MzFiMDBhYjk2Nzc0NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.F4GA0UkBmMTH3hTtFSbrMrSBqudmtfgqt4w1tmAKyIU",
+              "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3N2JmMmQ0NWQwM2M1NmU0MDM1MWY0MDRmMmI5YzE2NSIsInN1YiI6IjY1NzIxNGRmNmRjNmMwMDBlNGE2ZWY3ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.N7dXnjssQSxvw76PThr3jqG3qtYeckQspl7-jRKHG-s",
           },
         }
       );
