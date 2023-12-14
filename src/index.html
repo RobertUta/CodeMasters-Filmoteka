@@ -3,33 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Filmoteka | Home</title>
-    <link rel="stylesheet" href="./sass/utils/index.scss" />
+    <meta
+      name="description"
+      content="Filmoteka - service for searching films."
+    />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+    <meta name="theme-color" content="#fff" />
 
+    <title>Filmoteka</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,600&family=Raleway:wght@700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-
-    <script type="module" src="./index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <header>
-      <include src="./partials/header.html"></include>
-    </header>
-
-    <main>
-     <include src="./partials/mobilesection-modal.html"></include>
-      <include src="./partials/gallery.html"></include>
-    </main>
-
-    <footer>
-      <include src="./partials/pagination.html"></include>
+    <div class="wrapper">
+      <include src="./partials/header-main.html"></include>
+      <main>
+        <include src="./partials/movies.html"></include>
+        <include src="./partials/pagination.html"></include>
+      </main>
       <include src="./partials/footer.html"></include>
-    </footer>
+    </div>
 
+    <!-- Modal to one movie -->
+    <include src="./partials/spiner.html"></include>
+    <include src="./partials/modal-movie.html"></include>
+
+    <!-- Scroll to top -->
+    <include src="./partials/scroll-to-top.html"></include>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper', {
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        effect: 'flip',
+        flipEffect: {
+          slideShadows: false,
+        },
+      });
+    </script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>
