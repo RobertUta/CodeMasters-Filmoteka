@@ -1,1 +1,0 @@
-{"mappings":"AAAA,SAASA,aACOC,SAASC,KACfC,UAAUC,OAAO,Y","sources":["src/partials/change-background.js"],"sourcesContent":["function myFunction() {\n  let element = document.body;\n  element.classList.toggle('dark-mode');\n}\n"],"names":["myFunction","document","body","classList","toggle"],"version":3,"file":"index.b7968539.js.map"}
