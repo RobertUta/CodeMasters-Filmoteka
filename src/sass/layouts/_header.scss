@@ -2,20 +2,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 100%;
-  height: 230px;
+  height: 320px;
   width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(to right,
-      rgba(0, 0, 0, 0.56),
-      rgba(0, 0, 0, 0.56)),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
     url('../images/header/mobile/1x/abstract-background-with-red-lines@1x.jpg');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
       url('../images/header/mobile/2x/abstract-background-with-red-lines@2x.jpg');
   }
 
@@ -23,23 +23,23 @@
   (min-resolution: 384dpi),
   (min-resolution: 3dppx) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
       url('../images/header/mobile/3x/abstract-background-with-red-lines@3x.jpg');
   }
 
   @media screen and (min-width: getSize(tablet)) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
       url('../images/header/tablet/1x/abstract-background-with-red-lines@1x.jpg');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/tablet/2x/abstract-background-with-red-lines@2x.jpg');
     }
 
@@ -47,24 +47,24 @@
     (min-resolution: 384dpi),
     (min-resolution: 3dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/tablet/3x/abstract-background-with-red-lines@3x.jpg');
     }
   }
 
   @media screen and (min-width: getSize(desktop)) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
       url('../images/header/desktop/1x/abstract-background-with-red-lines@1x.jpg');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/desktop/2x/abstract-background-with-red-lines@2x.jpg');
     }
 
@@ -72,8 +72,8 @@
     (min-resolution: 384dpi),
     (min-resolution: 3dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/desktop/3x/abstract-background-with-red-lines@3x.jpg');
     }
   }
@@ -176,7 +176,7 @@
     width: 100%;
     height: 3px;
     border-radius: 2px;
-    background-color: getColor(current-page);
+    background-color:#ff6b01;
     left: 0;
     bottom: -1px;
   }
