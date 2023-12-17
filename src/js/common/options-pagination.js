@@ -42,14 +42,12 @@ export const options = {
           '</a>';
       }
 
-      if (type === 'last') {
+   if (type === 'last') {
         template =
           '<a href="#" class="tui-page-btn tui-last custom-class-last">' +
-          '<span class="tui-ico-last">' +
-          options.totalItems +
-          '</span>' +
+          '<span class="tui-ico-last">20</span>' 
           '</a>';
-      }
+      }   
 
       return template;
     },

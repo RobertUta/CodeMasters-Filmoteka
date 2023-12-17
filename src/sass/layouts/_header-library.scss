@@ -7,7 +7,7 @@
   background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.56),
       rgba(0, 0, 0, 0.56)),
-    url('../images/header-library/mobile/Rectangle1@1x.jpg');
+    url('../images/header-library/mobile/library.png');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -31,7 +31,7 @@
     background-image: linear-gradient(to right,
         rgba(0, 0, 0, 0.56),
         rgba(0, 0, 0, 0.56)),
-      url('../images/header-library/tablet/Rectangle1@1x.jpg');
+      url('../images/header-library/tablet/library.png');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -56,7 +56,7 @@
     background-image: linear-gradient(to right,
         rgba(0, 0, 0, 0.56),
         rgba(0, 0, 0, 0.56)),
-      url('../images/header-library/desktop/Rectangle1@1x.jpg');
+      url('../images/header-library/desktop/library.png');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -93,6 +93,7 @@
   width: 130px;
   height: 44px;
   cursor: pointer;
+  border-radius: 50px;
 
   @media screen and (min-width: 768px) {
     width: 147px;
@@ -102,5 +103,6 @@
   &-active {
     background: #ff6b01;
     border: none;
+    border-radius: 50px;
   }
 }

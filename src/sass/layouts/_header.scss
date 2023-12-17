@@ -2,20 +2,29 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 100%;
-  height: 230px;
+  height: 320px;
   width: 100%;
   margin: 0 auto;
   background-image: linear-gradient(to right,
-      rgba(0, 0, 0, 0.56),
-      rgba(0, 0, 0, 0.56)),
-    url('../images/header/mobile/1x/abstract-background-with-red-lines@1x.jpg');
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)),
+    url('../images/header/mobile/1x/popcorn.png');
+
+    .btn-link{
+      border-radius: 50px;
+      border: none;
+      width: 117px;
+      height: 42px;
+      background-color: black;
+     
+    }
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
       url('../images/header/mobile/2x/abstract-background-with-red-lines@2x.jpg');
   }
 
@@ -23,23 +32,23 @@
   (min-resolution: 384dpi),
   (min-resolution: 3dppx) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
       url('../images/header/mobile/3x/abstract-background-with-red-lines@3x.jpg');
   }
 
   @media screen and (min-width: getSize(tablet)) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
-      url('../images/header/tablet/1x/abstract-background-with-red-lines@1x.jpg');
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url('../images/header/tablet/1x/Cinema1.png');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/tablet/2x/abstract-background-with-red-lines@2x.jpg');
     }
 
@@ -47,24 +56,24 @@
     (min-resolution: 384dpi),
     (min-resolution: 3dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/tablet/3x/abstract-background-with-red-lines@3x.jpg');
     }
   }
 
   @media screen and (min-width: getSize(desktop)) {
     background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 0.56),
-        rgba(0, 0, 0, 0.56)),
-      url('../images/header/desktop/1x/abstract-background-with-red-lines@1x.jpg');
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)),
+      url('../images/header/desktop/1x/Cinema1.png');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/desktop/2x/abstract-background-with-red-lines@2x.jpg');
     }
 
@@ -72,8 +81,8 @@
     (min-resolution: 384dpi),
     (min-resolution: 3dppx) {
       background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.56),
-          rgba(0, 0, 0, 0.56)),
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.2)),
         url('../images/header/desktop/3x/abstract-background-with-red-lines@3x.jpg');
     }
   }
@@ -103,11 +112,13 @@
 .header__icon {
   animation: scale-logo 2000ms infinite linear;
   stroke: getColor(white-text-color);
+  
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   @extend %link;
-
   @media screen and (min-width: getSize(tablet)) {
     display: flex;
     align-items: center;
@@ -119,14 +130,16 @@
     display: inline-block;
   }
 
-  &:hover {
-    transform: scale(1.2);
-  }
+  
 }
 
 .logo__text {
-  display: none;
-
+  color: #fff;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  display: block;
   @media screen and (min-width: getSize(tablet)) {
     display: block;
     font-weight: 500;
@@ -161,10 +174,13 @@
   max-width: 100%;
   text-decoration: none;
 
+
   &:hover,
   &:focus {
     color: getColor(accent-text-color);
   }
+
+ 
 }
 
 .current {
@@ -176,7 +192,7 @@
     width: 100%;
     height: 3px;
     border-radius: 2px;
-    background-color: getColor(current-page);
+    background-color:#ff6b01;
     left: 0;
     bottom: -1px;
   }
