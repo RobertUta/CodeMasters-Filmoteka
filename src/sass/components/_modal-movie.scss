@@ -287,7 +287,7 @@
     visibility getProperty(time) getProperty(cubic);
 
   @media screen and (min-width: getSize(desktop)) {
-    opacity: 0;
+    opacity: 0.50;
     background-color: none;
   }
 }
