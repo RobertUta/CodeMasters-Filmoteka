@@ -8,7 +8,16 @@
   background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)),
-    url('../images/header/mobile/1x/abstract-background-with-red-lines@1x.jpg');
+    url('../images/header/mobile/1x/popcorn.png');
+
+    .btn-link{
+      border-radius: 50px;
+      border: none;
+      width: 117px;
+      height: 42px;
+      background-color: black;
+     
+    }
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -32,7 +41,7 @@
     background-image: linear-gradient(to right,
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)),
-      url('../images/header/tablet/1x/abstract-background-with-red-lines@1x.jpg');
+      url('../images/header/tablet/1x/Cinema1.png');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -57,7 +66,7 @@
     background-image: linear-gradient(to right,
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)),
-      url('../images/header/desktop/1x/abstract-background-with-red-lines@1x.jpg');
+      url('../images/header/desktop/1x/Cinema1.png');
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -103,11 +112,13 @@
 .header__icon {
   animation: scale-logo 2000ms infinite linear;
   stroke: getColor(white-text-color);
+  
 }
 
 .logo {
+  display: flex;
+  align-items: center;
   @extend %link;
-
   @media screen and (min-width: getSize(tablet)) {
     display: flex;
     align-items: center;
@@ -119,14 +130,16 @@
     display: inline-block;
   }
 
-  &:hover {
-    transform: scale(1.2);
-  }
+  
 }
 
 .logo__text {
-  display: none;
-
+  color: #fff;
+  margin-left: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  display: block;
   @media screen and (min-width: getSize(tablet)) {
     display: block;
     font-weight: 500;
@@ -161,10 +174,13 @@
   max-width: 100%;
   text-decoration: none;
 
+
   &:hover,
   &:focus {
     color: getColor(accent-text-color);
   }
+
+ 
 }
 
 .current {
