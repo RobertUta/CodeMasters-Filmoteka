@@ -48,7 +48,7 @@
 }
 
 .dark .sorry {
-    color: #b3b3b39c;
+    color: #e692319c;
     font-size: 50px;
     margin-bottom: 20px;
 }
@@ -88,6 +88,10 @@
     background-color: rgb(179, 179, 179);
 }
 
+.dark .string__alert{
+    color: #585858d5;
+}
+
 .theme {
     position: absolute;
     top: 275px;
@@ -111,4 +115,3 @@
     color: getColor(white-text-color);
 }
 
-// 
