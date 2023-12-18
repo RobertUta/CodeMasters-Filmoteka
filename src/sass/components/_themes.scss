@@ -21,7 +21,7 @@
 
 .scrolltop__btn:hover{
     box-shadow: 0 0.5px 0.5px 0 rgba(17, 6, 6, 0.2),
-    0 6px 20px 0 rgba(189, 130, 13, 0.726);
+    0 6px 20px 0 rgba(0, 0, 0, 0.726);
 }
 
 .dark .modal-movie{
@@ -53,9 +53,14 @@
     margin-bottom: 20px;
 }
 
+.dark  .button-active{
+   background-color: #e692319c;
+}
+
 .dark .modal-movie{
     background-color: #413f3fef;
 }
+
 
 .dark .modal-movie__cell{
     color: rgb(179, 179, 179);
