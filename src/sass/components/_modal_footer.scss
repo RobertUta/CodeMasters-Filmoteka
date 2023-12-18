@@ -100,7 +100,7 @@
 .accordion li,
 .accordion li img,
 .accordion li .content,
-.accordion li .content span {
+.accordion li .content .text {
   transition: 0.3s;
 }
 
@@ -120,7 +120,7 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  color: #fff;
+  color: #b0e4fc;
   padding: 15px;
   background: #02022e;
   background: linear-gradient(
@@ -132,7 +132,7 @@
   visibility: hidden;
 }
 
-.accordion li .content span {
+.accordion li .content .text {
   position: absolute;
   z-index: 3;
   left: 50%;
@@ -154,7 +154,7 @@
   visibility: visible;
 }
 
-.accordion li:hover span {
+.accordion li:hover .text {
   translate: -50% 0;
   opacity: 1;
   visibility: visible;
@@ -182,7 +182,6 @@
 }
 
 .accordion li {
-  /* Alte reguli CSS pentru li ... */
   animation: scaleAnimation 40s infinite;
 }
 
@@ -218,7 +217,7 @@
   }
   .gallery h2,
   p {
-    color: rgb(255, 255, 255);
+    color: #b0e4fc;
     margin-bottom: 15px;
     margin-top: 15px;
   }
