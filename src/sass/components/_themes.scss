@@ -53,8 +53,16 @@
     margin-bottom: 20px;
 }
 
+.dark  .button-active{
+   background-color: #e692319c;
+}
+
 .dark .modal-movie{
     background-color: #413f3fef;
+}
+
+.dark .footer__icon{
+    fill:#e692319c;
 }
 
 .dark .modal-movie__cell{
