@@ -19,6 +19,11 @@
      
     }
 
+    .header__icon{
+      width: 15px;
+      height: 15px;
+      }
+
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
@@ -102,10 +107,18 @@
 
   @media screen and (min-width: getSize(tablet)) {
     margin-bottom: 52px;
+    .header__icon{
+      width: 24px;
+      height: 24px;
+      }
   }
 
   @media screen and (min-width: getSize(desktop)) {
     margin-bottom: 53px;
+    .header__icon{
+      width: 24px;
+      height: 24px;
+      }
   }
 }
 
@@ -133,10 +146,15 @@
   
 }
 
+.header__icon{
+width: 15px;
+height: 15px;
+}
+
 .logo__text {
   color: #fff;
-  margin-left: 15px;
-  font-size: 25px;
+  margin-left: 5px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 35px;
   display: block;
