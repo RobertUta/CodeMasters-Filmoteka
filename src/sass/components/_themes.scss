@@ -6,7 +6,7 @@
     }
 
     & .footer {
-        background-color: getColor(current-page);
+        background-color: rgb(73, 73, 73);
     }
 
     & .footer__btn {
@@ -17,6 +17,23 @@
     & .footer__info {
         color: getColor(white-text-color);
     }
+}
+
+.scrolltop__btn:hover{
+    box-shadow: 0 0.5px 0.5px 0 rgba(17, 6, 6, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.726);
+}
+
+.dark .modal-movie{
+    background-color: #f3f3f3;
+}
+
+.transitionBtn {
+     transition: 1000ms;
+ }
+
+.dark .tui-page-btn{
+    color: #b3b3b3;
 }
 
 .material-icons {
@@ -30,14 +47,68 @@
     }
 }
 
+.dark .sorry {
+    color: #e692319c;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.dark  .button-active{
+   background-color: #e692319c;
+}
+
+.dark .modal-movie{
+    background-color: #413f3fef;
+}
+
+
+.dark .modal-movie__cell{
+    color: rgb(179, 179, 179);
+}
+
+.dark .modal-movie__title{
+    color: rgb(224, 222, 222);
+}
+
+.dark .modal-movie__subtitle{
+    color: rgb(224, 222, 222);
+}
+
+.dark .modal-movie__text{
+     color: rgb(179, 179, 179);
+}
+
+.dark .button.button--modal-btn{
+    color: rgb(179, 179, 179);
+    border-color: rgb(179, 179, 179);
+}
+
+.dark .button.button--modal-btn:hover{
+    border: none;
+    color: black;
+}
+
+.dark .modal-movie__span--votes{
+    color:rgb(0, 0, 0);
+    background-color: rgb(179, 179, 179);
+}
+
+.dark .string__alert{
+    color: #585858d5;
+}
+
 .theme {
     position: absolute;
-    top: 185px;
-    right: 20vw;
+    top: 275px;
+    right: 15vw;
+}
+
+.dark .card__title{
+    color: rgb(179, 179, 179) ;
 }
 
 .dark body {
-    background-color: getColor(modal-overlay);
+    background-color:rgb(39, 39, 39);
 }
 
 .dark .movie-card__info-title {
@@ -48,3 +119,4 @@
 .dark .card__year {
     color: getColor(white-text-color);
 }
+

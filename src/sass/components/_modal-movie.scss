@@ -5,18 +5,14 @@
   z-index: 20;
   opacity: 0.25;
   visibility: visible;
-
   width: 100%;
   height: 100%;
-
   background-color: getColor(primary-text-color);
-
   transition: opacity getProperty(time) getProperty(cubic),
     visibility getProperty(time) getProperty(cubic);
 
   @media screen and (min-width: getSize(desktop)) {
-    opacity: 0;
-
+    opacity: 0.50;
     background-color: none;
   }
 }
@@ -29,12 +25,10 @@
   opacity: 1;
   visibility: visible;
   overflow-y: scroll;
-
+  border-radius: 20px;
   max-height: 96%;
   padding: 40px 20px;
-
   background-color: getColor(white-text-color);
-
   transform: translate(-50%, -50%) scale(1);
   transition: opacity getProperty(time) getProperty(cubic),
     visibility getProperty(time) getProperty(cubic);
@@ -57,7 +51,8 @@
 
   @media screen and (min-width: getSize(desktop)) {
     width: 806px;
-    border: 1px solid #000;
+    box-shadow: 0 4px 8px 0 rgba(17, 6, 6, 0.2),
+//     0 6px 20px 0 rgba(22, 21, 19, 0.726);
   }
 }
 
@@ -92,6 +87,10 @@
 
 .close-btn__icon {
   fill: currentColor;
+}
+.close-btn__icon:hover,
+.close-btn__icon:focus{
+  transform: scale(1.23);
 }
 
 .modal-movie__thumb {
@@ -164,7 +163,7 @@
 }
 
 .modal-movie__cell--gray-text {
-  color: getColor(modal-items);
+  color: rgb(179, 179, 179);
 }
 
 .modal-movie__cell--last-row {
@@ -234,7 +233,7 @@
 .button.button--modal-btn {
   width: 110px;
   height: 44px;
-
+  border-radius: 50px;
   transition: color getProperty(time) getProperty(cubic),
     background-color getProperty(time) getProperty(cubic),
     border-color getProperty(time) getProperty(cubic);
