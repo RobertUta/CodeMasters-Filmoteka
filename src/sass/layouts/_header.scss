@@ -30,7 +30,7 @@
     background-image: linear-gradient(to right,
         rgba(0, 0, 0, 0.2),
         rgba(0, 0, 0, 0.2)),
-      url('../images/header/mobile/1x/Code-masters.png');
+      url('../images/header/mobile/2x/Code-masters-2x.jpg');
   }
 
   @media (min-device-pixel-ratio: 3),
@@ -54,7 +54,7 @@
       background-image: linear-gradient(to right,
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)),
-        url('../images/header/tablet/2x/abstract-background-with-red-lines@2x.jpg');
+        url('../images/header/tablet/2x/Code-masters-2x.jpg');
     }
 
     @media (min-device-pixel-ratio: 3),
@@ -63,7 +63,7 @@
       background-image: linear-gradient(to right,
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)),
-        url('../images/header/tablet/3x/abstract-background-with-red-lines@3x.jpg');
+        url('../images/header/tablet/2x/Code-masters-2x.jpg');
     }
   }
 
@@ -79,17 +79,17 @@
       background-image: linear-gradient(to right,
           rgba(0, 0, 0, 0.2),
           rgba(0, 0, 0, 0.2)),
-        url('../images/header/desktop/2x/abstract-background-with-red-lines@2x.jpg');
+        url('../images/header/desktop/2x/Code-masters-2x.jpg');
     }
 
-    @media (min-device-pixel-ratio: 3),
-    (min-resolution: 384dpi),
-    (min-resolution: 3dppx) {
-      background-image: linear-gradient(to right,
-          rgba(0, 0, 0, 0.2),
-          rgba(0, 0, 0, 0.2)),
-        url('../images/header/desktop/3x/abstract-background-with-red-lines@3x.jpg');
-    }
+    // @media (min-device-pixel-ratio: 3),
+    // (min-resolution: 384dpi),
+    // (min-resolution: 3dppx) {
+    //   background-image: linear-gradient(to right,
+    //       rgba(0, 0, 0, 0.2),
+    //       rgba(0, 0, 0, 0.2)),
+    //     url('../images/header/desktop/2x/Code-masters-2x.jpg');
+    // }
   }
 }
 
